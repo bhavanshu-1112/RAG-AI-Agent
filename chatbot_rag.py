@@ -18,7 +18,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv()
 
-st.title("Procure AI 🚀")
+st.title("Nova AI ☄️")
 st.caption("Ask questions about documents from the documents folder AND uploaded docs")
 
 # Configuration
@@ -423,4 +423,5 @@ if prompt and has_any_docs:
     st.session_state.messages.append(AIMessage(result))
 
 elif prompt and not has_any_docs:
+
     st.warning("Please process folder documents and/or upload documents first to ask questions!")
